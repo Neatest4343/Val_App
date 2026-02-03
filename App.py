@@ -4,7 +4,7 @@ import time
 from datetime import datetime
 from PIL import Image, ImageDraw, ImageFont
 
-st.set_page_config(page_title="💌 For Ayoola", page_icon="❤️", layout="centered")
+st.set_page_config(page_title="💌 For Ayo Ola", page_icon="❤️", layout="centered")
 
 # ------------------ Styling ------------------
 st.markdown("""
@@ -39,7 +39,7 @@ if "button_shift" not in st.session_state:
     st.session_state.button_shift = random.randint(1, 3)
 
 # ------------------ App ------------------
-st.markdown("<div class='big'>💖 Hey Ayoola 😊</div>", unsafe_allow_html=True)
+st.markdown("<div class='big'>💖 Hey Ayo Ola 😊</div>", unsafe_allow_html=True)
 
 if not st.session_state.accepted:
     st.markdown("<div class='soft'>Will you be my Val? 🌹</div>", unsafe_allow_html=True)
@@ -61,7 +61,7 @@ if not st.session_state.accepted:
 
             st.warning(random.choice([
                 "Oops… that button moved 😄",
-                "Nice try, Ayoola 😉",
+                "Nice try, Ayo Ola 😉",
                 "The universe redirected that choice 💫",
                 "Hmm… that didn’t land 😌",
                 "Retry unlocked 😄"
@@ -70,7 +70,7 @@ if not st.session_state.accepted:
 else:
     st.markdown("<div class='card'>", unsafe_allow_html=True)
     st.markdown("## 🎉 IT’S A YES! 🎉")
-    st.markdown("### Ayoola just unlocked Valentine mode 💕")
+    st.markdown("### Ayo Ola just unlocked Valentine mode 💕")
 
     # Countdown
     valentine_date = datetime(datetime.now().year, 2, 14)
@@ -110,7 +110,7 @@ else:
         font_big = font_small = ImageFont.load_default()
 
     draw.text((150, 60), "SAVE THE DATE 💖", fill="#b3003b", font=font_big)
-    draw.text((170, 140), "Ayoola’s Valentine", fill="#000000", font=font_small)
+    draw.text((170, 140), "Ayo Ola’s Valentine", fill="#000000", font=font_small)
     draw.text((140, 190), f"Venue: {venue}", fill="#000000", font=font_small)
     draw.text((190, 240), "February 14", fill="#000000", font=font_small)
 
